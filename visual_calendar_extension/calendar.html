@@ -1,0 +1,525 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+	
+	
+
+
+
+
+
+
+		
+	
+		
+<style>
+#boxes {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+#column1 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+
+#column2 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+
+#column3 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+#column4 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+
+#column5 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+#column6 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+#column7 {
+  background-color: #FFFFFF;
+  border-right: 1px solid black;
+
+  float: left;
+  height: 700px;
+  width: 10%;
+  padding: 0 10px;
+}
+
+
+#sessionBlock {
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+
+div[id^="1sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="2sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="3sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="4sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="5sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="6sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+div[id^="7sessionBlock_"]{
+	text-align: right;
+	height:30px;
+	background-color:white;
+	
+}
+
+#timeBlock {
+	text-align: right;
+	height:30px
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+}
+</style>
+
+
+<div>Month: <span id="currentMonth"></span></div>
+<div>Days in month: <span id="daysInMonth"></span></div>
+<button id="previousWeek">Previous Week</button>
+<button id="nextWeek">Next Week</button>
+  <div id="column1">
+	<h2>Time</h2>
+
+
+	<div id="timeBlock">8am</div>
+	<div id="timeBlock">8:30am</div>
+	<div id="timeBlock">9am</div>
+	<div id="timeBlock">9:30am</div>
+	<div id="timeBlock">10am</div>
+	<div id="timeBlock">10:30am</div>
+
+	<div id="timeBlock">11am</div>
+	<div id="timeBlock">11:30am</div>
+	<div id="timeBlock">12pm</div>
+	<div id="timeBlock">12:30pm</div>
+	<div id="timeBlock">1pm</div>
+	<div id="timeBlock">1:30pm</div>
+	<div id="timeBlock">2pm</div>
+	<div id="timeBlock">2:30pm</div>
+
+	<div id="timeBlock">3pm</div>
+	<div id="timeBlock">3:30pm</div>
+  
+	<div id="timeBlock">4pm</div>
+	<div id="timeBlock">4:30pm</div>
+
+	<div id="timeBlock">5pm</div>
+	<div id="timeBlock">5:30pm</div>
+	<div id="timeBlock">6pm</div>
+
+  
+
+</div>
+  <div id="column1">
+	 <span id="1_date"></span>
+	<div class="empty" id="1sessionBlock_1"> </div>
+	<div class="empty" id="1sessionBlock_2"> </div>
+	<div class="empty" id="1sessionBlock_3"> </div>
+	<div class="empty" id="1sessionBlock_4"> </div>
+	<div class="empty" id="1sessionBlock_5"> </div>
+	<div class="empty" id="1sessionBlock_6"> </div>
+	<div class="empty" id="1sessionBlock_7"> </div>
+	<div class="empty" id="1sessionBlock_8"> </div>
+	<div class="empty" id="1sessionBlock_9"> </div>
+	<div class="empty" id="1sessionBlock_10"> </div>
+	<div class="empty" id="1sessionBlock_11"> </div>
+	<div class="empty" id="1sessionBlock_12"> </div>
+	<div class="empty" id="1sessionBlock_13"> </div>
+	<div class="empty" id="1sessionBlock_14"> </div>
+	<div class="empty" id="1sessionBlock_15"> </div>
+	<div class="empty" id="1sessionBlock_16"> </div>
+	<div class="empty" id="1sessionBlock_17"> </div>
+	<div class="empty" id="1sessionBlock_18"> </div>
+	<div class="empty" id="1sessionBlock_19"> </div>
+	<div class="empty" id="1sessionBlock_20"> </div>
+	<div class="empty" id="1sessionBlock_21"> </div>
+	<div class="empty" id="1sessionBlock_22"> </div>
+
+</div>
+  <div id="column2">
+ <span id="2_date"></span>
+	<div class="empty" id="2sessionBlock_1"> </div>
+	<div class="empty" id="2sessionBlock_2"> </div>
+	<div class="empty" id="2sessionBlock_3"> </div>
+	<div class="empty" id="2sessionBlock_4"> </div>
+	<div class="empty" id="2sessionBlock_5"> </div>
+	<div class="empty" id="2sessionBlock_6"> </div>
+	<div class="empty" id="2sessionBlock_7"> </div>
+	<div class="empty" id="2sessionBlock_8"> </div>
+	<div class="empty" id="2sessionBlock_9"> </div>
+	<div class="empty" id="2sessionBlock_10"> </div>
+	<div class="empty" id="2sessionBlock_11"> </div>
+	<div class="empty" id="2sessionBlock_12"> </div>
+	<div class="empty" id="2sessionBlock_13"> </div>
+	<div class="empty" id="2sessionBlock_14"> </div>
+	<div class="empty" id="2sessionBlock_15"> </div>
+	<div class="empty" id="2sessionBlock_16"> </div>
+	<div class="empty" id="2sessionBlock_17"> </div>
+	<div class="empty" id="2sessionBlock_18"> </div>
+	<div class="empty" id="2sessionBlock_19"> </div>
+	<div class="empty" id="2sessionBlock_20"> </div>
+	<div class="empty" id="2sessionBlock_21"> </div>
+	<div class="empty" id="2sessionBlock_22"> </div>
+
+</div>
+  <div id="column3">
+	 <span id="3_date"></span>
+	<div  class="empty" id="3sessionBlock_1"> </div>
+	<div  class="empty" id="3sessionBlock_2"> </div>
+	<div  class="empty" id="3sessionBlock_3"> </div>
+	<div  class="empty" id="3sessionBlock_4"> </div>
+	<div class="empty"  id="3sessionBlock_5"> </div>
+	<div class="empty" id="3sessionBlock_6"> </div>
+	<div class="empty" id="3sessionBlock_7"> </div>
+	<div class="empty" id="3sessionBlock_8"> </div>
+	<div class="empty"  id="3sessionBlock_9"> </div>
+	<div class="empty" id="3sessionBlock_10"> </div>
+	<div class="empty" id="3sessionBlock_11"> </div>
+	<div class="empty" id="3sessionBlock_12"> </div>
+	<div class="empty" id="3sessionBlock_13"> </div>
+	<div class="empty" id="3sessionBlock_14"> </div>
+	<div class="empty" id="3sessionBlock_15"> </div>
+	<div class="empty"  id="3sessionBlock_16"> </div>
+	<div class="empty" id="3sessionBlock_17"> </div>
+	<div class="empty" id="3sessionBlock_18"> </div>
+	<div class="empty" id="3sessionBlock_19"> </div>
+	<div class="empty" id="3sessionBlock_20"> </div>
+	<div class="empty" id="3sessionBlock_21"> </div>
+	<div class="empty" id="3sessionBlock_22"> </div>
+</div>
+  <div id="column4">
+	 <span id="4_date"></span>
+	<div class="empty" id="4sessionBlock_1"> </div>
+	<div class="empty" id="4sessionBlock_2"> </div>
+	<div class="empty" id="4sessionBlock_3"> </div>
+	<div class="empty"  id="4sessionBlock_4"> </div>
+	<div class="empty" id="4sessionBlock_5"> </div>
+	<div class="empty"  id="4sessionBlock_6"> </div>
+	<div class="empty" id="4sessionBlock_7"> </div>
+	<div class="empty" id="4sessionBlock_8"> </div>
+	<div class="empty" id="4sessionBlock_9"> </div>
+	<div class="empty"  id="4sessionBlock_10"> </div>
+	<div class="empty" id="4sessionBlock_11"> </div>
+	<div class="empty" id="4sessionBlock_12"> </div>
+	<div class="empty" id="4sessionBlock_13"> </div>
+	<div class="empty" id="4sessionBlock_14"> </div>
+	<div class="empty"  id="4sessionBlock_15"> </div>
+	<div class="empty" id="4sessionBlock_16"> </div>
+	<div class="empty" id="4sessionBlock_17"> </div>
+	<div class="empty" id="4sessionBlock_18"> </div>
+	<div class="empty" id="4sessionBlock_19"> </div>
+	<div class="empty" id="4sessionBlock_20"> </div>
+	<div class="empty" id="4sessionBlock_21"> </div>
+	<div class="empty" id="4sessionBlock_22"> </div>
+</div>
+  <div id="column5">
+	 <span id="5_date"></span>
+	<div class="empty" id="5sessionBlock_1"> </div>
+	<div class="empty" id="5sessionBlock_2"> </div>
+	<div class="empty" id="5sessionBlock_3"> </div>
+	<div class="empty" id="5sessionBlock_4"> </div>
+	<div class="empty" id="5sessionBlock_5"> </div>
+	<div class="empty" id="5sessionBlock_6"> </div>
+	<div class="empty" id="5sessionBlock_7"> </div>
+	<div class="empty" id="5sessionBlock_8"> </div>
+	<div class="empty" id="5sessionBlock_9"> </div>
+	<div class="empty" id="5sessionBlock_10"> </div>
+	<div class="empty" id="5sessionBlock_11"> </div>
+	<div class="empty" id="5sessionBlock_12"> </div>
+	<div class="empty" id="5sessionBlock_13"> </div>
+	<div class="empty" id="5sessionBlock_14"> </div>
+	<div class="empty" id="5sessionBlock_15"> </div>
+	<div class="empty" id="5sessionBlock_16"> </div>
+	<div class="empty" id="5sessionBlock_17"> </div>
+	<div class="empty" id="5sessionBlock_18"> </div>
+	<div class="empty" id="5sessionBlock_19"> </div>
+	<div class="empty" id="5sessionBlock_20"> </div>
+	<div class="empty" id="5sessionBlock_21"> </div>
+	<div class="empty" id="5sessionBlock_22"> </div>
+</div>
+ 
+
+<div id="column6">
+	<span id="6_date"></span>
+   <div class="empty" id="6sessionBlock_1"> </div>
+   <div class="empty" id="6sessionBlock_2"> </div>
+   <div class="empty" id="6sessionBlock_3"> </div>
+   <div class="empty" id="6sessionBlock_4"> </div>
+   <div class="empty" id="6sessionBlock_5"> </div>
+   <div class="empty" id="6sessionBlock_6"> </div>
+   <div class="empty" id="6sessionBlock_7"> </div>
+   <div class="empty" id="6sessionBlock_8"> </div>
+   <div class="empty" id="6sessionBlock_9"> </div>
+   <div class="empty" id="6sessionBlock_10"> </div>
+   <div class="empty" id="6sessionBlock_11"> </div>
+   <div class="empty" id="6sessionBlock_12"> </div>
+   <div class="empty" id="6sessionBlock_13"> </div>
+   <div class="empty" id="6sessionBlock_14"> </div>
+   <div class="empty" id="6sessionBlock_15"> </div>
+   <div class="empty" id="6sessionBlock_16"> </div>
+   <div class="empty" id="6sessionBlock_17"> </div>
+   <div class="empty" id="6sessionBlock_18"> </div>
+   <div class="empty" id="6sessionBlock_19"> </div>
+   <div class="empty" id="6sessionBlock_20"> </div>
+   <div class="empty" id="6sessionBlock_21"> </div>
+   <div class="empty" id="6sessionBlock_22"> </div>
+</div>
+
+<div id="column7">
+	<span id="7_date"></span>
+   <div class="empty" id="7sessionBlock_1"> </div>
+   <div class="empty" id="7sessionBlock_2"> </div>
+   <div class="empty" id="7sessionBlock_3"> </div>
+   <div class="empty" id="7sessionBlock_4"> </div>
+   <div class="empty" id="7sessionBlock_5"> </div>
+   <div class="empty" id="7sessionBlock_6"> </div>
+   <div class="empty" id="7sessionBlock_7"> </div>
+   <div class="empty" id="7sessionBlock_8"> </div>
+   <div class="empty" id="7sessionBlock_9"> </div>
+   <div class="empty" id="7sessionBlock_10"> </div>
+   <div class="empty" id="7sessionBlock_11"> </div>
+   <div class="empty" id="7sessionBlock_12"> </div>
+   <div class="empty" id="7sessionBlock_13"> </div>
+   <div class="empty" id="7sessionBlock_14"> </div>
+   <div class="empty" id="7sessionBlock_15"> </div>
+   <div class="empty" id="7sessionBlock_16"> </div>
+   <div class="empty" id="7sessionBlock_17"> </div>
+   <div class="empty" id="7sessionBlock_18"> </div>
+   <div class="empty" id="7sessionBlock_19"> </div>
+   <div class="empty" id="7sessionBlock_20"> </div>
+   <div class="empty" id="7sessionBlock_21"> </div>
+   <div class="empty" id="7sessionBlock_22"> </div>
+</div>
+
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="exampleModalLabel">Add Session</h1>
+
+		
+			
+
+
+
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div style="height:400px">
+				
+				
+				
+				
+			
+
+			
+		
+
+					<div class="input-group mb-3">
+						<span class="input-group-text">Day</span>
+
+						<select class="form-select" id="sessionDay" aria-label="Default select example">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							</select>
+
+
+
+						<span class="input-group-text">Month</span>
+
+						<select class="form-select" id="sessionMonth" aria-label="Default select example">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+
+							</select>
+
+
+
+						
+						<span class="input-group-text">Year</span>  
+						<select class="form-select" id="sessionYear" aria-label="Default select example">
+							<option value="24">2024</option>
+							<option value="25">2025</option>
+							</select>
+					</div>
+
+
+
+				<label for="formGroupExampleInput" class="form-label">Title</label>
+				
+				<input type="text" class="form-control" id="sessionTitle" placeholder="">
+	
+				<label for="formGroupExampleInput2" class="form-label">Description</label>
+				<input type="text" class="form-control" id="sessionDesc" placeholder="">
+
+				<label for="formGroupExampleInput2" class="form-label">Time</label>
+		
+			
+				<select class="form-select" id="sessionTime" aria-label="Default select example">
+					<option value="1">8am</option>
+					<option value="2">8:30am</option>
+					<option value="3">9am</option>
+					<option value="4">9:30am</option>
+					<option value="5">10am</option>
+					<option value="6">10:30am</option>
+					<option value="7">11am</option>
+					<option value="8">11:30am</option>
+					<option value="9">12pm</option>
+					<option value="10">12:30pm</option>
+					<option value="11">1pm</option>
+					<option value="12">1:30pm</option>
+					<option value="13">2pm</option>
+					<option value="14">2:30pm</option>
+					<option value="15">3pm</option>
+					<option value="16">3:30</option>
+					<option value="17">4pm</option>
+					<option value="18">4:30</option>
+					<option value="19">5pm</option>
+					<option value="20">5:30pm</option>
+					<option value="21">6pm</option>
+					</select>
+			
+
+					<label for="formGroupExampleInput2" class="form-label">Session Location</label>
+					<input type="text" class="form-control" id="sessionLocation" placeholder="">
+
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  <button type="button" id="addSession" class="btn btn-primary">Add Session</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+
+
+
+<link href="bootstrap.min.css" rel="stylesheet"/>
+  
+<script src="bootstrap.bundle.min.js"> </script>
+
+<script src="main.js"></script>
+<script src="calData.js"></script>

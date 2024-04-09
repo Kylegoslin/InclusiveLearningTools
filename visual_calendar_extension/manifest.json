@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Visual Calendar",
+  "description": "Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "calendar_icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "storage"
+  ]
+}

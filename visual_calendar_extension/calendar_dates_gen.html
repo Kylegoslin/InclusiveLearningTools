@@ -1,0 +1,123 @@
+<script>
+
+// Get the current date information
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+
+// Get the first three characters of the day
+var dayName = date.toString().split(' ')[0];
+
+
+
+let months = [] // all of the month arrays will be held in this array.
+
+
+
+
+
+// ---------------------------------------------
+// Given the first three letters of a day,
+// return the next calendar day.
+// ---------------------------------------------
+function getTomorrowDay(today){
+
+    let tomorrow = '';
+
+        if(today == 'Mon'){
+            tomorrow = 'Tue'
+        }
+        else if(today == 'Tue'){
+            tomorrow = 'Wed'
+        }
+        else if(today == 'Wed'){
+            tomorrow = 'Thu'
+        }
+        else if(today == 'Thu'){
+            tomorrow = 'Fri'
+        }
+        else if(today == 'Fri'){
+            tomorrow = 'Sat'
+        }
+        else if(today == 'Sat'){
+            tomorrow = 'Sun'
+        }
+        else if(today == 'Sun'){
+            tomorrow = 'Mon'
+        }
+
+        return tomorrow;
+}
+
+
+// ---------------------------------------------
+// For each different calendar month after the current
+// month, this will generate the dates.
+// ---------------------------------------------
+function genOtherMonth(monthNum, lastDay, numberOfDays){
+    console.log("month ----- "+monthNum)
+    
+    let monthDates = []
+    let tomorrow = '' 
+    // if we are on the current month, we need the current day.
+    if(lastDay == ''){
+    console.log("no last day using"+dayName)
+      tomorrow = dayName;
+    } else {
+
+
+         tomorrow = lastDay;
+     }
+
+
+    let c = 0;
+    if(lastDay == ''){
+        c=day+1; // use current day if first month
+    } else {
+        c=1;
+    }
+
+    for(c;c<numberOfDays+1; c++){
+
+      
+        tomorrow = getTomorrowDay(tomorrow);       
+        console.log(c + " " + tomorrow);
+        monthDates.push(c + "-"+tomorrow)
+    
+        if(c==numberOfDays){
+          lastDayWas = tomorrow; 
+        }
+    }
+    
+    months.push(monthDates)
+    
+    return lastDayWas
+   
+   
+}
+
+// This holds the number of days in each month
+// 0 is the first record so we can use 1,2,3 etc. for month numbers.
+let daysEachMonth = [0, 31, 28, 31,30, 31,30,31,31,30,31,30,31]
+
+// Generate month data
+
+
+let lastDay = genOtherMonth(3, '', daysEachMonth[3]);
+lastDay = genOtherMonth(3, lastDay, daysEachMonth[3]);
+console.log("--")
+lastDay = genOtherMonth(4, lastDay, daysEachMonth[4]);
+console.log("--")
+lastDay = genOtherMonth(5, lastDay, daysEachMonth[5]);
+console.log("--")
+lastDay = genOtherMonth(6, lastDay, daysEachMonth[6]);
+
+
+for(let i=0; i<months.length; i++){
+
+  let currentMonth = months[i];
+  
+  console.log(currentMonth)
+}
+
+</script>
